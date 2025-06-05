@@ -1,0 +1,167 @@
+.container {
+    width: 60vw;
+    margin: 8vh auto;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 30px;
+}
+
+.formController {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 20px 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.inputController {
+    flex: 1;
+    margin-right: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px 10px;
+    font: 1em sans-serif;
+    margin: 10px 0 15px;
+}
+
+.submit {
+    background: #1bb425;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.submit:hover {
+    background: #0c921e;
+}
+
+.cancel {
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    background: #dc2c2c;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cancel:hover {
+    background-color: #db5050;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th:first-child {
+    font-weight: bold;
+}
+
+td:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.edit {
+    background-color: #00d9ff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.edit:hover {
+    background: #09bcdb;
+}
+
+.delete {
+    background-color: #ff3333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.delete:hover {
+    background: #ff1c1c;
+}
+
+.downloadButton{
+    margin-top: 20px;
+    background-color: #4c87af;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.downloadButton:hover {
+    background: #3c6075;
+}
+
+/*Todo: Dark Mode Styles */
+.darkMode .container {
+    background-color: #333;
+    color: #fff;
+}
+
+.darkMode .formController {
+    background-color: #444;
+    box-shadow: rgba(60, 64, 67, 0.9) 0px 1px 2px 0px, rgba(60, 64, 67, 0.75) 0px 2px 6px 2px;
+}
+
+.darkMode label {
+    color: #fff;
+}
+
+.darkMode input, .darkMode select, .darkMode textarea {
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #777;
+}
+
+.darkMode .table th, .darkMode .table td {
+    background-color: #444;
+    color: #ccc;
+    border-bottom: 1px solid #555;
+}
+
+.darkMode .table td:nth-child(even) {
+    background-color: #555;
+    
+}

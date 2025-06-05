@@ -1,0 +1,28 @@
+.container{
+    margin: 10px 15vw;
+    padding: 20px 10px;
+}
+
+.formGroup{
+    margin: 20px 0;
+    
+    button{
+        padding: 5px 10px;
+        background: #e4ccac;
+        border-radius: 5px;
+        border: none;
+        margin: 20px 0;
+    }
+}
+
+
+.formControl{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input{
+        width: 280px;
+        padding: 5px 10px;
+    }
+
+}
