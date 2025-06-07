@@ -4,6 +4,21 @@ import { Provider } from "react-redux";
 import SingUp from "../Pages/Auth/SingUp";
 import store from "../Store/store";
 
+test("renders head line", () => {
+  render(
+    <Provider store={store}>
+      <BrowserRouter>
+        <SingUp />
+      </BrowserRouter>
+    </Provider>
+  );
+  // expect(screen.getAllByText(/Sign Up/i)).toBeInTheDocument();
+  const elements = screen.getAllByText(/Sign Up/i);
+  elements.forEach((element) => {
+    expect(element).toBeInTheDocument();
+  });
+});
+
 test("renders email input field", () => {
   render(
     <Provider store={store}>
